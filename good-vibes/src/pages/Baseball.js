@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 
 
 const Baseball = () => {
-  const url = 'https://api.the-odds-api.com/v4/sports/{sport}/odds/?apiKey=${apiKey}&regions={regions}&markets={markets}'
   const apiKey = 'd9e163701b045d428083085e25f0ceec'
+  const url = 'https://api.the-odds-api.com/v4/sports/baseball_mlb/odds/?apiKey=d9e163701b045d428083085e25f0ceec&regions=us&markets=h2h,spreads&oddsFormat=american'
   
   const [baseball, setBaseball] = useState([])
   
@@ -16,15 +16,18 @@ const Baseball = () => {
   useEffect(() => {getBaseball()}, []);
   return (
     <>
+      <h1>Baseball</h1>
     <section>
-      {baseball.map(bases => {
+      {baseball.map((bases, index) => {
         return(
-          <div>
-          <h3>{bases.odds}</h3>
+          <div className='teams'>
+          <h3 className='home-teams'>{bases.home_team}</h3>
+          vs.
+          <h3 className='away-teams'>{bases.away_team}</h3>
+          
           </div>
         )
       })}
-    <h1>Baseball</h1>
    </section>
     </>
   )

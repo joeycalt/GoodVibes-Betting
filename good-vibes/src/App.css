@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 10px;
+  flex-wrap: wrap;
+}
+
+.teams {
+  display: flex;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 5fr 5fr 5fr;
+  grid-template-rows: 2fr 2fr 3fr;
+}
+
+.home-team {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.away-team {
+  text-align: right;
+}
