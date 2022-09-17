@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -54,6 +56,7 @@ section {
   font-size: 14px;
   margin-top: 20px;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .home-team {
@@ -67,8 +70,29 @@ section {
 
 .nav {
   padding: 30px;
+  background-color: red;
+  border-bottom: 1px solid black;
 }
 
 .nav a {
-  padding: 70px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+a:hover {
+  color: rgb(190, 188, 188);
+  transition: 1.1s;
+}
+
+.header {
+  background-color: red;
+  color: white;
+  margin: 0;
+  padding: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid black ;
+  font-family: cursive;
+  font-size: 60px;
 }

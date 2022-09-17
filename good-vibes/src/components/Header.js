@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
-    <h1>GoodVibes Betting</h1>
-    <nav className="nav">
-      <Link to="/">Home
+    <h1 className='header'>GoodVibes Betting</h1>
+    <nav className="nav navbar">
+   
+      <Link to="/">GVB
       </Link>
       <Link to='/baseball'>Baseball
       </Link>
