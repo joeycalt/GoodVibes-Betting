@@ -39,34 +39,41 @@
   }
 }
 
-section {
-  width: 90%;
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  
-}
-
-.teams {
-  padding: 20px;
-  font-size: 14px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
 .home-team {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  font-size: 12px;
 }
 
 .away-team {
   text-align: right;
+  font-size: 12px;
 }
+section {
+  width: 90%;
+  display: flex;
+  justify-content: right;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.teams {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  border: 1px solid black;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
 
 .nav {
   padding: 30px;
@@ -95,4 +102,27 @@ a:hover {
   border-bottom: 1px solid black ;
   font-family: cursive;
   font-size: 60px;
+}
+
+.image {
+  height: 200px;
+  width: 300px;
+  margin: 30px;
+}
+
+.home-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scores {
+  padding-bottom: 200px;
+}
+
+p {
+  font-weight: bold;
+  font-size: 18px;
 }
