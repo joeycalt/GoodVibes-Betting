@@ -16,14 +16,13 @@ const Baseball = () => {
   // useEffect(() => {getBaseball()}, []);
   return (
     <>
-      <h1>Baseball</h1>
+      <h1 className='league'>MLB</h1>
     {/* <section>
       {baseball.map((bases, index) => {
         return(
           <div className='teams'>
           <h3 className='home-teams'>{bases.home_team}</h3>
           vs.
-          {bases.scores}
           <h3 className='away-teams'>{bases.away_team}</h3>
           
 

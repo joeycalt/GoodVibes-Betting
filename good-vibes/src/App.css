@@ -1,12 +1,7 @@
-
-
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  background-color: rgba(168, 168, 168, 0.973);
+  color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -68,12 +63,10 @@ section {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: left;
-  border: 1px solid black;
+  border: 3px solid black;
   margin-right: 10px;
   margin-left: 10px;
 }
-
-
 
 .nav {
   padding: 30px;
@@ -85,7 +78,8 @@ section {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
+  margin-right: 40px;
 }
 
 a:hover {
@@ -95,34 +89,77 @@ a:hover {
 
 .header {
   background-color: red;
-  color: white;
+  color: black;
   margin: 0;
   padding: 10px;
   padding-bottom: 15px;
   border-bottom: 1px solid black ;
-  font-family: cursive;
+  font-family:monospace;
   font-size: 60px;
+}
+
+.title {
+  margin-top: 40px;
+  font-size: 30px;
+  font-family: monospace;
+}
+
+.home-images {
+  margin-top: 80px;
 }
 
 .image {
   height: 200px;
   width: 300px;
   margin: 30px;
+  border-radius: 5%;
 }
 
-.home-images {
+.footer {
+  margin-top: 100px;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+  margin-left: 25px;
+}
+
+.top-img {
+  height: 150px;
+  width: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.league {
+  margin-top: 30px;
+  color: white;
+}
+
+.image-base {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
+  background-color: rgb(45, 45, 45);
+  margin: 20px;
 }
 
-.scores {
-  padding-bottom: 200px;
+.image-foot {
+  display: flex;
+  align-items: center;
+  background-color: rgb(45, 45, 45);
+  margin: 20px;
+  display: flex;
+  justify-content: right;
 }
 
-p {
-  font-weight: bold;
-  font-size: 18px;
+.image-puck {
+  display: flex;
+  align-items: center;
+  background-color: rgb(45, 45, 45);
+  margin: 20px;
+}
+
+.home-scores {
+  text-align: left
 }

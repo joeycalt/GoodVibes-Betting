@@ -5,11 +5,13 @@ import { Route, Routes } from 'react-router-dom';
 import Baseball from './pages/Baseball';
 import Football from './pages/Football';
 import Hockey from './pages/Hockey';
+import Footer from './components/Footer';
 
 
 
 function App() {
   return (
+    <>
     <div className="App">
      <Header />
      <Routes>
@@ -18,7 +20,9 @@ function App() {
      <Route path='/football' element={<Football />} />
      <Route path='/hockey' element={<Hockey />} />
      </Routes>
+     <Footer />
     </div>
+    </>
   );
 }
 
