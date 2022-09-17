@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 
 const Baseball = () => {
   const apiKey = 'd9e163701b045d428083085e25f0ceec'
-  const url = 'https://api.the-odds-api.com/v4/sports/baseball_mlb/odds/?apiKey=d9e163701b045d428083085e25f0ceec&regions=us&markets=h2h,spreads&oddsFormat=american'
+  const url = ' https://api.the-odds-api.com/v4/sports/baseball_mlb/scores?&apiKey=ecb8115431aa607425c590edf96b109e'
   
   const [baseball, setBaseball] = useState([])
   
@@ -23,8 +23,10 @@ const Baseball = () => {
           <div className='teams'>
           <h3 className='home-teams'>{bases.home_team}</h3>
           vs.
+          {bases.scores}
           <h3 className='away-teams'>{bases.away_team}</h3>
           
+
           </div>
         )
       })}

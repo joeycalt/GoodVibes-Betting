@@ -38,22 +38,22 @@
 }
 
 section {
-  width: 50%;
+  width: 90%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   font-size: 10px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
 }
 
 .teams {
-  display: flex;
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 5fr 5fr 5fr;
-  grid-template-rows: 2fr 2fr 3fr;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .home-team {
@@ -63,4 +63,12 @@ section {
 
 .away-team {
   text-align: right;
+}
+
+.nav {
+  padding: 30px;
+}
+
+.nav a {
+  padding: 70px;
 }
