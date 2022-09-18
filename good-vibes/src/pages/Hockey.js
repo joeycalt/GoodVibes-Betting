@@ -16,7 +16,7 @@ const Hockey = () => {
 //   useEffect(() => {getHockey()}, []);
   return (
     <>
-      <h1>Hockey</h1>
+      <h1 className='league'>Hockey</h1>
     {/* <section>
       {hockey.map((pucks, index) => {
         return(

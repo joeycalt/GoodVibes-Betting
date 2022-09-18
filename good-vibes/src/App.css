@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: rgba(168, 168, 168, 0.973);
+  background-color: rgba(26, 26, 26, 0.973);
   color: white;
 }
 
@@ -70,12 +70,12 @@ section {
 
 .nav {
   padding: 30px;
-  background-color: red;
+  background-color: rgb(84, 81, 81);
   border-bottom: 1px solid black;
 }
 
 .nav a {
-  color: white;
+  color: #ffff00;
   text-decoration: none;
   font-weight: bold;
   font-size: 15px;
@@ -88,8 +88,8 @@ a:hover {
 }
 
 .header {
-  background-color: red;
-  color: black;
+  background-color: rgb(84, 81, 81);
+  color: #ffff00;
   margin: 0;
   padding: 10px;
   padding-bottom: 15px;
@@ -102,6 +102,7 @@ a:hover {
   margin-top: 40px;
   font-size: 30px;
   font-family: monospace;
+  color: #ffff00;
 }
 
 .home-images {
@@ -134,7 +135,7 @@ a:hover {
 
 .league {
   margin-top: 30px;
-  color: white;
+  color: #ffff00;
 }
 
 .image-base {
@@ -142,6 +143,10 @@ a:hover {
   align-items: center;
   background-color: rgb(45, 45, 45);
   margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5%;
+  width: 80%;
 }
 
 .image-foot {
@@ -149,8 +154,12 @@ a:hover {
   align-items: center;
   background-color: rgb(45, 45, 45);
   margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: right;
+  border-radius: 5%;
+  width: 80%;
 }
 
 .image-puck {
@@ -158,8 +167,13 @@ a:hover {
   align-items: center;
   background-color: rgb(45, 45, 45);
   margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5%;
+  width: 80%;
 }
 
 .home-scores {
-  text-align: left
+  text-align: left;
+  color: #ffff00;
 }

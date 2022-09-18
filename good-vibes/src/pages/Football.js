@@ -16,7 +16,7 @@ const Football = () => {
 //   useEffect(() => {getFootball()}, []);
   return (
     <>
-      <h1>Football</h1>
+      <h1 className='league'>Football</h1>
     {/* <section>
       {football.map((foots, index) => {
         return(
