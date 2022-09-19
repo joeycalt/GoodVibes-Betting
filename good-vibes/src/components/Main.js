@@ -3,41 +3,41 @@ import { Link } from 'react-router-dom'
 
 
 const Main = () => {
-//     const apiKey = '1f8894fe9ad6afe5171b0ff58f0738aa'
-//     const url = `https://api.the-odds-api.com/v4/sports/baseball_mlb/scores/?apiKey=${apiKey}`
-//     const urlTwo = `https://api.the-odds-api.com/v4/sports/americanfootball_nfl/scores/?apiKey=${apiKey}`
-//     const urlThree = `https://api.the-odds-api.com/v4/sports/icehockey_nhl/scores/?apiKey=${apiKey}`
+    const apiKey = '3c39eb24b9aa875ad7c0d3b1b27381e9'
+    const url = `https://api.the-odds-api.com/v4/sports/baseball_mlb/scores/?apiKey=${apiKey}`
+    const urlTwo = `https://api.the-odds-api.com/v4/sports/americanfootball_nfl/scores/?apiKey=${apiKey}`
+    const urlThree = `https://api.the-odds-api.com/v4/sports/icehockey_nhl/scores/?apiKey=${apiKey}`
 
     
-//     const [baseball, setBaseball] = useState([])
+    const [baseball, setBaseball] = useState([])
     
-//     const getBaseball = async () => {
-//       const response =await fetch(url)
-//       const data = await response.json()
-//       console.log(data)
-//       setBaseball(data)
-//     }
-//     useEffect(() => {getBaseball()}, []);
+    const getBaseball = async () => {
+      const response =await fetch(url)
+      const data = await response.json()
+      console.log(data)
+      setBaseball(data)
+    }
+    useEffect(() => {getBaseball()}, []);
 
-//     const [football, setFootball] = useState([])
+    const [football, setFootball] = useState([])
   
-//       const getFootball = async () => {
-//         const response =await fetch(urlTwo)
-//         const data = await response.json()
-//         console.log(data)
-//         setFootball(data)
-//       }
-//       useEffect(() => {getFootball()}, []);
+      const getFootball = async () => {
+        const response =await fetch(urlTwo)
+        const data = await response.json()
+        console.log(data)
+        setFootball(data)
+      }
+      useEffect(() => {getFootball()}, []);
 
-//       const [hockey, setHockey] = useState([])
+      const [hockey, setHockey] = useState([])
   
-//   const getHockey = async () => {
-//     const response =await fetch(urlThree)
-//     const data = await response.json()
-//     console.log(data)
-//     setHockey(data)
-//   }
-//   useEffect(() => {getHockey()}, []);
+  const getHockey = async () => {
+    const response =await fetch(urlThree)
+    const data = await response.json()
+    console.log(data)
+    setHockey(data)
+  }
+  useEffect(() => {getHockey()}, []);
 
   return (
     <>
@@ -49,17 +49,22 @@ const Main = () => {
         <img className="image" src='http://cdn.shopify.com/s/files/1/0480/9470/7866/collections/ef26964ae31041325cd9672682c01534.jpg?v=1646869133'></img>
         </Link>
         <div className='live-scores'>
-            {/* <section>
+            <section>
         {baseball.map((bases, index) => {
           return(
             <div className='home-scores'>
-            {bases.home_team}
-            <p className='vs'>vs.</p>
-            {bases.away_team}
+                <div>
+            <p className='team'>{bases.home_team}</p>
+            vs.
+            <p className='team'>{bases.away_team}</p>
+            </div>
+            <div>
+            {bases?.scores?.map(ev => <p className='league-score'>{ev.score}</p>)}
+            </div>
             </div>
           )
         })}
-     </section> */}
+     </section>
         </div>
        </div>
        <div className='image-foot'>

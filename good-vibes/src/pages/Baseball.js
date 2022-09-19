@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 
 const Baseball = () => {
-  const apiKey = '1f8894fe9ad6afe5171b0ff58f0738aa'
+  const apiKey = '3c39eb24b9aa875ad7c0d3b1b27381e9'
   const url = `https://api.the-odds-api.com/v4/sports/baseball_mlb/odds/?apiKey=${apiKey}&regions=us&markets=h2h,spreads&oddsFormat=american`
   
   const [baseball, setBaseball] = useState([])

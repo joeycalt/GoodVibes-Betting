@@ -34,16 +34,6 @@
   }
 }
 
-.home-team {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  font-size: 12px;
-}
-
-.away-team {
-  text-align: right;
-  font-size: 12px;
-}
 section {
   width: 90%;
   display: flex;
@@ -183,7 +173,9 @@ section {
   overflow: hidden;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 70%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 section {
@@ -231,4 +223,16 @@ section {
 
 .books {
  
+}
+
+.league-score {
+ margin: 50px;
+ font-size: 14px;
+}
+
+
+.team {
+  margin: 20px;
+  margin-top: 40px;
+  font-size: 15px;
 }
