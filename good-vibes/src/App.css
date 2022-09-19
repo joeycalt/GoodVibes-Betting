@@ -88,7 +88,7 @@ a:hover {
 }
 
 .header {
-  background-color: rgb(84, 81, 81);
+  background-color: #545151;
   color: #ffff00;
   margin: 0;
   padding: 10px;
@@ -136,6 +136,7 @@ a:hover {
 .league {
   margin-top: 30px;
   color: #ffff00;
+  font-family:monospace;
 }
 
 .image-base {
@@ -146,7 +147,7 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   border-radius: 5%;
-  width: 80%;
+  width: 90%;
 }
 
 .image-foot {
@@ -159,7 +160,7 @@ a:hover {
   display: flex;
   justify-content: right;
   border-radius: 5%;
-  width: 80%;
+  width: 90%;
 }
 
 .image-puck {
@@ -170,10 +171,30 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   border-radius: 5%;
-  width: 80%;
+  width: 90%;
 }
 
 .home-scores {
   text-align: left;
   color: #ffff00;
+  font-family:monospace;
+}
+
+.first {
+  margin-top: 80px;
+  color: #ffff00;
+}
+
+.button {
+  background-color: rgb(45, 45, 45);
+  color: #ffff00;
+  margin: 10px;
+  font-size: 30px;
+  border-radius: 15%;
+  margin-top: 30px;
+}
+
+.button:hover {
+  color: #fefefe;
+  transition: .5s;
 }

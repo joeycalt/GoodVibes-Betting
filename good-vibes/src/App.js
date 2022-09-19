@@ -6,7 +6,8 @@ import Baseball from './pages/Baseball';
 import Football from './pages/Football';
 import Hockey from './pages/Hockey';
 import Footer from './components/Footer';
-
+import First from './components/First';
+import Restricted from './components/Restricted';
 
 
 function App() {
@@ -15,7 +16,9 @@ function App() {
     <div className="App">
      <Header />
      <Routes>
-     <Route path='/' element={<Main />} />
+     <Route path='/' element={<First />} />
+     <Route path='/restricted' element={<Restricted />} />
+     <Route path='/home' element={<Main />} />
      <Route path='/baseball' element={<Baseball />} />
      <Route path='/football' element={<Football />} />
      <Route path='/hockey' element={<Hockey />} />
