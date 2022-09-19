@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 
-const Main = (props) => {
+const Main = () => {
 //     const apiKey = '1f8894fe9ad6afe5171b0ff58f0738aa'
 //     const url = `https://api.the-odds-api.com/v4/sports/baseball_mlb/scores/?apiKey=${apiKey}`
 //     const urlTwo = `https://api.the-odds-api.com/v4/sports/americanfootball_nfl/scores/?apiKey=${apiKey}`

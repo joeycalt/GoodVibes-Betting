@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from 'react'
 
 
-const Hockey = (props) => {
+const Hockey = () => {
 //   const apiKey = '1f8894fe9ad6afe5171b0ff58f0738aa'
 //   const urlThree = `https://api.the-odds-api.com/v4/sports/hockey_nhl/odds/?apiKey=${apiKey}&regions=us&markets=h2h,spreads&oddsFormat=american`
   
 //   const [hockey, setHockey] = useState([])
   
 //   const getHockey = async () => {
-//     const response =await fetch(urlThree)
-//     const data = await response.json()
-//     console.log(data)
-//     setHockey(data)
-//   }
+//         try {
+// //     const response =await fetch(urlThree)
+// //     const data = await response.json()
+// //     console.log(data)
+// //     setHockey(data)
+//         } catch (err){
+//             console.log(err)
+//         }
+// //   }
 //   useEffect(() => {getHockey()}, []);
   return (
     <>
@@ -33,6 +37,7 @@ const Hockey = (props) => {
    </section> */}
     </>
   )
+
 }
 
 export default Hockey
