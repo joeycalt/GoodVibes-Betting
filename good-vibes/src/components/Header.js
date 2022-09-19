@@ -14,11 +14,11 @@ const Header = () => {
       <Link to="/home">
       <img className='logo'  src='https://i.im.ge/2022/09/19/1dvbB1.Screen-Shot-2022-09-18-at-8-36-33-PM.png'></img>
       </Link>
-      <Link to='/baseball'>Baseball
+      <Link className='nav-league' to='/baseball'>Baseball
       </Link>
-      <Link to='/football'>Football
+      <Link className='nav-league' to='/football'>Football
       </Link>
-      <Link to='/hockey'>Hockey
+      <Link className='nav-league' to='/hockey'>Hockey
       </Link>
     </nav>
 </>

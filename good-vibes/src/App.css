@@ -82,7 +82,7 @@ section {
   margin-right: 40px;
 }
 
-a:hover {
+.nav a:hover {
   color: rgb(190, 188, 188);
   transition: 1.1s;
 }
@@ -110,8 +110,8 @@ a:hover {
 }
 
 .image {
-  height: 200px;
-  width: 300px;
+  height: 60px;
+  width: 100px;
   margin: 30px;
   border-radius: 5%;
 }
@@ -175,29 +175,31 @@ a:hover {
 }
 
 .home-scores {
-  text-align: left;
   color: #ffff00;
   font-family:monospace;
-  font-size: 10px;
-  display: flex;
-  flex-direction: row;
-  padding: 15px;
+  font-size: 12px;
   border: 1px solid #ffff00;
   margin: 5px;
-  text-align: center;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 70%;
 }
 
-.vs {
-  padding: 10px;
-  color: white;
-  margin-right: 15px;
-}
-
-.live-scores {
-  width: 60%;
+section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.vs {
+  color: white;
+  margin: 0;
+}
+
+.live-scores {
+  width: 100%;
 }
 
 .first {

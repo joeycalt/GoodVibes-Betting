@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 
 const Hockey = (props) => {
 //   const apiKey = '1f8894fe9ad6afe5171b0ff58f0738aa'
-//   const urlThree = `https://api.the-odds-api.com/v4/sports/icehockey_nhl/scores?&apiKey=${apiKey}`
+//   const urlThree = `https://api.the-odds-api.com/v4/sports/hockey_nhl/odds/?apiKey=${apiKey}&regions=us&markets=h2h,spreads&oddsFormat=american`
   
 //   const [hockey, setHockey] = useState([])
   
