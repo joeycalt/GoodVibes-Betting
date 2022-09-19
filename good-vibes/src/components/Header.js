@@ -11,7 +11,7 @@ const Header = () => {
     </h1>
     <nav className="nav navbar">
    
-      <Link to="/">
+      <Link to="/home">
       <img className='logo'  src='https://i.im.ge/2022/09/19/1dvbB1.Screen-Shot-2022-09-18-at-8-36-33-PM.png'></img>
       </Link>
       <Link to='/baseball'>Baseball

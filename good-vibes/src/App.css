@@ -178,6 +178,26 @@ a:hover {
   text-align: left;
   color: #ffff00;
   font-family:monospace;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  border: 1px solid #ffff00;
+  margin: 5px;
+  text-align: center;
+}
+
+.vs {
+  padding: 10px;
+  color: white;
+  margin-right: 15px;
+}
+
+.live-scores {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .first {
@@ -197,4 +217,12 @@ a:hover {
 .button:hover {
   color: #fefefe;
   transition: .5s;
+}
+
+.form {
+  width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+  height: 3vw;
+  margin-top: 50px;
 }
