@@ -21,7 +21,7 @@ const Baseball = () => {
   return (
     <>
       <h1 className='league'>MLB</h1>
-    <section>
+    <section className='show-section'>
       {baseball.map((bases, index) => {
         return(
           <Accordion>

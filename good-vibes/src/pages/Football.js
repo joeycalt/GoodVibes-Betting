@@ -21,7 +21,7 @@ const Football = () => {
   return (
     <>
       <h1 className='league'>Football</h1>
-    {/* <section>
+    {/* <section className='show-section'>
       {football.map((foots, index) => {
         return(
           <div className='teams'>

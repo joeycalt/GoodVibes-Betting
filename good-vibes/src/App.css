@@ -141,6 +141,13 @@ section {
   width: 100%;
 }
 
+.show-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+}
+
 .live-scores {
   width: 100%;
 }
@@ -182,7 +189,9 @@ section {
  font-weight: bolder;
 }
 
-
+button.accordion-button:not(.collapsed) {
+  background-color: rgb(45, 45, 45);
+}
 
 button.accordion-button {
   background-color: rgb(45, 45, 45);
@@ -202,8 +211,8 @@ button.accordion-button {
 div.accordion {
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
+
 }
 
 div.accordion-body {
@@ -241,10 +250,8 @@ div.accordion-body {
     font-family:monospace;
     font-size: 8px;
     border: 1px solid #ffff00;
-    overflow: hidden;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: inline-block;
   }
 
   .team {
@@ -253,7 +260,15 @@ div.accordion-body {
 
   .league-score {
     font-size: 8px;
-  
     font-weight: bolder;
+  }
+
+  .section {
+    width: 50%;
+    display: block;
+  }
+
+  .show-section {
+    display: block;
   }
 }
