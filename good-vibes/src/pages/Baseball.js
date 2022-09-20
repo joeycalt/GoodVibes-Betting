@@ -35,12 +35,24 @@ const Baseball = () => {
           </Accordion.Header>
           <Accordion.Body>
           <div className='teams'>
-          {bases?.bookmakers?.map(el=> <p className='books'>{el.title}</p>)}
-          {/* {bases?.bookmakers?.markets?.map(el => {
-            return (
-              el.outcomes?.map(eachPrice => <p className='books'>{eachPrice.price}</p>)
-            )
-          })} */}
+          {bases?.bookmakers?.map(el=> (<p className='books'>{el.title}</p>),
+          function parse(arr) {
+            const output = {}
+            arr.forEach(el => {
+              const outcomes = el.markets
+              console.log(outcomes)
+              // const price = outcomes.map(obj => obj.price)
+              // console.log(price)
+              // output[el.name] = price
+            })
+            // console.log(output)
+            
+          },
+
+          )
+          
+          }
+          
           </div>
           </Accordion.Body>
           </Accordion.Item>

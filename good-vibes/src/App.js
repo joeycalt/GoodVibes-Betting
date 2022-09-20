@@ -8,7 +8,7 @@ import Hockey from './pages/Hockey';
 import Footer from './components/Footer';
 import First from './components/First';
 import Restricted from './components/Restricted';
-
+import About from './pages/About';
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
      <Route path='/baseball' element={<Baseball />} />
      <Route path='/football' element={<Football />} />
      <Route path='/hockey' element={<Hockey />} />
+     <Route path='/about' element={<About />} />
      </Routes>
      <Footer />
     </div>

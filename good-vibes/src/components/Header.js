@@ -20,6 +20,8 @@ const Header = () => {
       </Link>
       <Link className='nav-league' to='/hockey'>Hockey
       </Link>
+      <Link className='nav-league' to='/about'>About
+      </Link>
     </nav>
 </>
   )

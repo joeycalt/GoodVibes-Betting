@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom'
 const First = () => {
    return (
     <div>
-        <h1 className='first'>Before you begin, are you at least 21 years of age?</h1>
+        <h1 className='first'>Please enter your date of birth.</h1>
+        <h5>Must be 21 years of age or older</h5>
         <input
             type="date"
             className="form"

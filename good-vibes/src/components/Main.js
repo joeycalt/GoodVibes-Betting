@@ -49,7 +49,7 @@ const Main = () => {
         <img className="image" src='http://cdn.shopify.com/s/files/1/0480/9470/7866/collections/ef26964ae31041325cd9672682c01534.jpg?v=1646869133'></img>
         </Link>
         <div className='live-scores'>
-            {/* <section>
+            <section>
         {baseball.map((bases, index) => {
           return(
             <div className='home-scores'>
@@ -64,7 +64,7 @@ const Main = () => {
             </div>
           )
         })}
-     </section> */}
+     </section>
         </div>
        </div>
        <div className='image-foot'>

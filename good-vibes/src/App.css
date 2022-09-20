@@ -4,36 +4,6 @@
   color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 section {
   width: 90%;
   display: flex;
@@ -159,21 +129,16 @@ section {
   overflow: hidden;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  
 }
 
 section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   width: 100%;
-}
-
-.vs {
-  color: white;
-  margin: 0;
 }
 
 .live-scores {
@@ -208,20 +173,16 @@ section {
 }
 
 .books {
- 
+ text-align: left;
 }
 
 .league-score {
- margin: 50px;
+ margin-top: 30px;
  font-size: 14px;
+ font-weight: bolder;
 }
 
 
-.team {
-  margin: 20px;
-  margin-top: 40px;
-  font-size: 15px;
-}
 
 button.accordion-button {
   background-color: rgb(45, 45, 45);
@@ -229,8 +190,8 @@ button.accordion-button {
 }
 
 ::after {
-  background-color: rgb(45, 45, 45);
-  color: #ffff00;
+  background-color: #ffff00;
+  border-radius: 15%;
 }
 
 .teams {
@@ -248,4 +209,51 @@ div.accordion {
 div.accordion-body {
   background-color: rgb(45, 45, 45);
   color: #ffff00;
+}
+
+.about {
+  line-height: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
+  font-size: 20px;
+  word-spacing: 5px;
+}
+
+@media only screen and (max-width:1135px) {
+  .header, .navbar {
+  background-color: #545151;
+  color: #ffff00;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0px;
+  border-bottom: 1px solid black ;
+  font-family:monospace;
+  font-size: 20px;
+  }
+
+  .top-img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .home-scores {
+    color: #ffff00;
+    font-family:monospace;
+    font-size: 8px;
+    border: 1px solid #ffff00;
+    overflow: hidden;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .team {
+    font-size: 8px;
+  }
+
+  .league-score {
+    font-size: 8px;
+  
+    font-weight: bolder;
+  }
 }
