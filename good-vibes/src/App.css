@@ -44,20 +44,6 @@ section {
   grid-template-columns: 2fr 2fr;
 }
 
-.teams {
-  display: flex;
-  flex-direction: column;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: left;
-  border: 3px solid black;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
 .nav {
   padding: 30px;
   background-color: rgb(84, 81, 81);
@@ -235,4 +221,31 @@ section {
   margin: 20px;
   margin-top: 40px;
   font-size: 15px;
+}
+
+button.accordion-button {
+  background-color: rgb(45, 45, 45);
+  color: #ffff00;
+}
+
+::after {
+  background-color: rgb(45, 45, 45);
+  color: #ffff00;
+}
+
+.teams {
+  color: #ffff00;
+  background-color: rgb(45, 45, 45);
+}
+
+div.accordion {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div.accordion-body {
+  background-color: rgb(45, 45, 45);
+  color: #ffff00;
 }

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 
 const Main = () => {
-    const apiKey = '3c39eb24b9aa875ad7c0d3b1b27381e9'
+    const apiKey = 'c0a8ee56109127183ad45d57c7fe6577'
     const url = `https://api.the-odds-api.com/v4/sports/baseball_mlb/scores/?apiKey=${apiKey}`
     const urlTwo = `https://api.the-odds-api.com/v4/sports/americanfootball_nfl/scores/?apiKey=${apiKey}`
     const urlThree = `https://api.the-odds-api.com/v4/sports/icehockey_nhl/scores/?apiKey=${apiKey}`
@@ -49,7 +49,7 @@ const Main = () => {
         <img className="image" src='http://cdn.shopify.com/s/files/1/0480/9470/7866/collections/ef26964ae31041325cd9672682c01534.jpg?v=1646869133'></img>
         </Link>
         <div className='live-scores'>
-            <section>
+            {/* <section>
         {baseball.map((bases, index) => {
           return(
             <div className='home-scores'>
@@ -64,7 +64,7 @@ const Main = () => {
             </div>
           )
         })}
-     </section>
+     </section> */}
         </div>
        </div>
        <div className='image-foot'>
