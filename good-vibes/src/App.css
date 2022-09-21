@@ -136,7 +136,7 @@ section {
 
 section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   width: 100%;
 }
@@ -238,11 +238,13 @@ div.accordion-body {
   border-bottom: 1px solid black ;
   font-family:monospace;
   font-size: 20px;
+  transition: 1s;
   }
 
   .top-img {
     height: 20px;
     width: 20px;
+    transition: 1s;
   }
 
   .home-scores {
@@ -252,24 +254,29 @@ div.accordion-body {
     border: 1px solid #ffff00;
     width: 100%;
     display: block;
+    transition: 1s;
   }
 
   .team {
     font-size: 8px;
+    transition: 1s;
   }
 
   .league-score {
     font-size: 15px;
     font-weight: bolder;
+    transition: 1s;
   }
 
   .section {
     display: block;
     overflow: hidden;
+    transition: 1s;
   }
 
   .show-section {
     display: block;
+    transition: 1s;
   }
 
 }
@@ -277,6 +284,19 @@ div.accordion-body {
 @media only screen and (max-width: 505px) {
   .image-base {
     display: block;
+    transition: 1s;
+  }
+
+  .image-puck {
+    display: block;
+    transition: 1s;
+  }
+
+  .image-foot {
+    display: block;
+    transition: 1s;
+    display: flex;
+    flex-direction: column-reverse;
   }
   
   .header {
@@ -288,16 +308,19 @@ div.accordion-body {
     border-bottom: 1px solid black ;
     font-family:monospace;
     font-size: 10px;
+    transition: 1s;
     }
 
   a.nav-league {
     font-size: 8px;
+    transition: 1s;
   }
 
   section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    transition: 1s;
   }
 
   .home-scores {
@@ -306,16 +329,19 @@ div.accordion-body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    transition: 1s;
   }
 
   .team {
     font-size: 18px;
     overflow: hidden;
+    transition: 1s;
   }
 
   .league-score {
     padding: 10px;
-    margin-top: -3px
+    margin-top: -5px;
+    transition: 1s;
   }
   
 }
