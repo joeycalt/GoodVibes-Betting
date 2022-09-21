@@ -63,7 +63,7 @@ section {
 }
 
 .footer {
-  margin-top: 100px;
+  margin-top: 300px;
 }
 
 .logo {
@@ -80,7 +80,7 @@ section {
 }
 
 .league {
-  margin-top: 30px;
+  margin-top: 40px;
   color: #ffff00;
   font-family:monospace;
 }
@@ -153,7 +153,7 @@ section {
 }
 
 .first {
-  margin-top: 80px;
+  margin-top: 180px;
   color: #ffff00;
 }
 
@@ -241,8 +241,8 @@ div.accordion-body {
   }
 
   .top-img {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
   }
 
   .home-scores {
@@ -251,7 +251,7 @@ div.accordion-body {
     font-size: 8px;
     border: 1px solid #ffff00;
     width: 100%;
-    display: inline-block;
+    display: block;
   }
 
   .team {
@@ -259,16 +259,63 @@ div.accordion-body {
   }
 
   .league-score {
-    font-size: 8px;
+    font-size: 15px;
     font-weight: bolder;
   }
 
   .section {
-    width: 50%;
     display: block;
+    overflow: hidden;
   }
 
   .show-section {
     display: block;
   }
+
+}
+
+@media only screen and (max-width: 505px) {
+  .image-base {
+    display: block;
+  }
+  
+  .header {
+    background-color: #545151;
+    color: #ffff00;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0px;
+    border-bottom: 1px solid black ;
+    font-family:monospace;
+    font-size: 10px;
+    }
+
+  a.nav-league {
+    font-size: 8px;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .home-scores {
+    font-size: 18px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .team {
+    font-size: 18px;
+    overflow: hidden;
+  }
+
+  .league-score {
+    padding: 10px;
+    margin-top: -3px
+  }
+  
 }
