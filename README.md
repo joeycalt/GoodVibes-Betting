@@ -15,7 +15,7 @@ Throughout this app, there were many different languages, libraries and framewor
   - Bootstrap
   - DOM Manipulation
   
-## Gettin Started
+## Getting Started
  
 GoodVibes Betting is an app where users could get all betting odds in one place instead of searching through multiple sites just to compare and pick the best ones. This app is also a public repository where a user will be welcomed to forking and cloning down the repository to fix any errors or even add on to it. To get started, the user will need to first hit fork on the top right corner of the screen and hit create fork. Then the user will be able to copy their clone and download it on to their own machine. 
 
