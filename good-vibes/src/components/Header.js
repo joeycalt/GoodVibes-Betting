@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
+    <div className='main-nav'>
     <h1 className='header'>
         <img className='top-img' src='https://i.im.ge/2022/09/19/1dvbB1.Screen-Shot-2022-09-18-at-8-36-33-PM.png' alt=''></img>
         GoodVibes Betting
@@ -23,6 +24,7 @@ const Header = () => {
       <Link className='nav-league' to='/about'>About
       </Link>
     </nav>
+    </div>
 </>
   )
 }
