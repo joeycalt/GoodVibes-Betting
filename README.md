@@ -15,7 +15,7 @@ Throughout this app, there were many different languages, libraries and framewor
   - Bootstrap
   - DOM Manipulation
   
- ## Gettin Started
+## Gettin Started
  
 GoodVibes Betting is an app where users could get all betting odds in one place instead of searching through multiple sites just to compare and pick the best ones. This app is also a public repository where a user will be welcomed to forking and cloning down the repository to fix any errors or even add on to it. To get started, the user will need to first hit fork on the top right corner of the screen and hit create fork. Then the user will be able to copy their clone and download it on to their own machine. 
 
@@ -24,6 +24,21 @@ GoodVibes Betting is an app where users could get all betting odds in one place 
 If you the user would like to give any kind of input, we are more than welcome to take them in. We are always up to improving our app for the best user experience out there. Please email us at goodvibesbetting@yahoo.com for any inputs.
 
 ## Screenshots
+
+Greeting Page:
+![Screen Shot 2022-09-22 at 4 39 47 PM](https://user-images.githubusercontent.com/102116778/191846677-0e30dd50-ae5a-44b4-ba05-a0211a92a307.png)
+
+Homepage:
+![Screen Shot 2022-09-22 at 4 23 08 PM](https://user-images.githubusercontent.com/102116778/191846175-c925f435-73fa-49a5-ad40-d84874a86320.png)
+
+Show Page:
+![Screen Shot 2022-09-22 at 4 23 21 PM](https://user-images.githubusercontent.com/102116778/191846188-ecaa8758-ad7f-4213-9062-1c152c248b85.png)
+
+Show Page:
+![Screen Shot 2022-09-22 at 4 23 42 PM](https://user-images.githubusercontent.com/102116778/191846198-5d007d3d-b9e4-434a-b640-b6f86b34a682.png)
+
+Mobile View:
+![Screen Shot 2022-09-22 at 4 24 11 PM](https://user-images.githubusercontent.com/102116778/191846224-5baf0e26-3af1-4d52-b1d2-dc6f54cbeab0.png)
 
 ## Stretch Goals
 
