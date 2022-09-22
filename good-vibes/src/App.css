@@ -218,7 +218,6 @@ div.accordion {
 div.accordion-body {
   background-color: rgb(45, 45, 45);
   color: #ffff00;
-  width: 300px;
 }
 
 .about {
@@ -229,11 +228,9 @@ div.accordion-body {
   word-spacing: 5px;
 }
 
-div.lines {
- display: flex;
- flex-direction: row-reverse;
- align-items: center;
- margin-top: 0;
+.lines {
+  color: white;
+  margin-left: 80px
 }
 
 @media only screen and (max-width:1135px) {

@@ -3,41 +3,44 @@ import { Link } from 'react-router-dom'
 
 
 const Main = () => {
-//     const apiKey = '55bbfe9c5133b22ce854bcb89207b5ae'
-//     const url = `https://api.the-odds-api.com/v4/sports/baseball_mlb/scores/?apiKey=${apiKey}`
-//     const urlTwo = `https://api.the-odds-api.com/v4/sports/americanfootball_nfl/scores/?apiKey=${apiKey}`
-//     const urlThree = `https://api.the-odds-api.com/v4/sports/icehockey_nhl/scores/?apiKey=${apiKey}`
+    const apiKey = '3863ba9b6ef9ac5a8d41fef6671b8681'
+    const url = `https://api.the-odds-api.com/v4/sports/baseball_mlb/scores/?apiKey=${apiKey}`
+    const urlTwo = `https://api.the-odds-api.com/v4/sports/americanfootball_nfl/scores/?apiKey=${apiKey}`
+    const urlThree = `https://api.the-odds-api.com/v4/sports/icehockey_nhl/scores/?apiKey=${apiKey}`
 
     
-//     const [baseball, setBaseball] = useState([])
+    const [baseball, setBaseball] = useState([])
     
-//     const getBaseball = async () => {
-//       const response =await fetch(url)
-//       const data = await response.json()
-//       console.log(data)
-//       setBaseball(data)
-//     }
-//     useEffect(() => {getBaseball()}, []);
+    useEffect(() => {
+    const getBaseball = async () => {
+      const response =await fetch(url)
+      const data = await response.json()
+      console.log(data)
+      setBaseball(data)
+    }
+        getBaseball()}, [url]);
 
-//     const [football, setFootball] = useState([])
+    const [football, setFootball] = useState([])
   
-//       const getFootball = async () => {
-//         const response =await fetch(urlTwo)
-//         const data = await response.json()
-//         console.log(data)
-//         setFootball(data)
-//       }
-//       useEffect(() => {getFootball()}, []);
+    useEffect(() => {
+      const getFootball = async () => {
+        const response =await fetch(urlTwo)
+        const data = await response.json()
+        console.log(data)
+        setFootball(data)
+      }
+        getFootball()}, [urlTwo]);
 
-//       const [hockey, setHockey] = useState([])
+      const [hockey, setHockey] = useState([])
   
-//   const getHockey = async () => {
-//     const response =await fetch(urlThree)
-//     const data = await response.json()
-//     console.log(data)
-//     setHockey(data)
-//   }
-//   useEffect(() => {getHockey()}, []);
+      useEffect(() => {
+  const getHockey = async () => {
+    const response =await fetch(urlThree)
+    const data = await response.json()
+    console.log(data)
+    setHockey(data)
+  }
+    getHockey()}, [urlThree]);
 
   return (
     <>
@@ -49,7 +52,7 @@ const Main = () => {
         <img className="image" src='http://cdn.shopify.com/s/files/1/0480/9470/7866/collections/ef26964ae31041325cd9672682c01534.jpg?v=1646869133' alt=''></img>
         </Link>
         <div className='live-scores'>
-            {/* <section>
+            <section>
         {baseball.map((bases, index) => {
           return(
             <div className='home-scores'>
@@ -64,12 +67,12 @@ const Main = () => {
             </div>
           )
         })} 
-     </section> */}
+     </section>
         </div>
        </div>
        <div className='image-foot'>
        <div className='live-scores'>
-       {/* <section>
+       <section>
       {football.map((foots, index) => {
         return(
             <>
@@ -84,7 +87,7 @@ const Main = () => {
           </>
         )
       })}
-   </section> */}
+   </section>
         </div>
        <Link to='/football'>
        <img className='image'src='https://i.im.ge/2022/09/17/1271NW.nfl-logo.png' alt = ''></img>
@@ -95,7 +98,7 @@ const Main = () => {
        <img className='image'src='https://i.im.ge/2022/09/17/127B4a.imagesqtbnANd9GcQUEN7ARTW-RI6wCkbj9vF-qXD3O13a-WdW1QampusqpCAU.jpg' alt= ''></img>
        </Link>
        <div className='live-scores'>
-       {/* <section>
+       <section>
       {hockey.map((pucks, index) => {
         return(
             <>
@@ -110,7 +113,7 @@ const Main = () => {
           </>
         )
       })}
-   </section> */}
+   </section>
        </div>
        </div>
        </div>
