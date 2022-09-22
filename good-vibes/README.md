@@ -29,7 +29,7 @@ https://i.im.ge/2022/09/16/1O8KBp.Screen-Shot-2022-09-16-at-2-14-43-PM.png
 - Be able to show live betting odds on the show page after each refresh.
 
 ### Stretch Goals (if applicable)
-- In the future, I would like to filter by any team the player desires with a search bar up top. Once the search goes through, the page will list all of the teams upcoming games and odds.
+- In the future, I would like to filter by any team the user desires with a search bar up top. Once the search goes through, the page will list all of the teams upcoming games and odds.
 - Give the app some pagination so the user does not have to continuously scroll.
 
 
