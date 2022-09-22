@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 
 
 const Main = () => {
-    const apiKey = '3863ba9b6ef9ac5a8d41fef6671b8681'
-    const url = `https://api.the-odds-api.com/v4/sports/baseball_mlb/scores/?apiKey=${apiKey}`
-    const urlTwo = `https://api.the-odds-api.com/v4/sports/americanfootball_nfl/scores/?apiKey=${apiKey}`
-    const urlThree = `https://api.the-odds-api.com/v4/sports/icehockey_nhl/scores/?apiKey=${apiKey}`
+    
+    const url = `https://api.the-odds-api.com/v4/sports/baseball_mlb/scores/?daysFrom=1&apiKey=${process.env.REACT_APP_API_KEY}`
+    const urlTwo = `https://api.the-odds-api.com/v4/sports/americanfootball_nfl/scores/?daysFrom=1&apiKey=${process.env.REACT_APP_API_KEY}`
+    const urlThree = `https://api.the-odds-api.com/v4/sports/icehockey_nhl/scores/?daysFrom=1&apiKey=${process.env.REACT_APP_API_KEY}`
 
     
     const [baseball, setBaseball] = useState([])
@@ -15,7 +15,6 @@ const Main = () => {
     const getBaseball = async () => {
       const response =await fetch(url)
       const data = await response.json()
-      console.log(data)
       setBaseball(data)
     }
         getBaseball()}, [url]);
@@ -26,7 +25,6 @@ const Main = () => {
       const getFootball = async () => {
         const response =await fetch(urlTwo)
         const data = await response.json()
-        console.log(data)
         setFootball(data)
       }
         getFootball()}, [urlTwo]);
@@ -37,7 +35,6 @@ const Main = () => {
   const getHockey = async () => {
     const response =await fetch(urlThree)
     const data = await response.json()
-    console.log(data)
     setHockey(data)
   }
     getHockey()}, [urlThree]);

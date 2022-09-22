@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Accordion from 'react-bootstrap/Accordion';
 
 const Baseball = () => {
-  const apiKey = '7e20754c759a5f90a38705cb78192dae'
-
-  const url = `https://api.the-odds-api.com/v4/sports/baseball_mlb/odds/?apiKey=${apiKey}&regions=us&markets=h2h,spreads&oddsFormat=american`
+  const url = `https://api.the-odds-api.com/v4/sports/baseball_mlb/odds/?apiKey=${process.env.REACT_APP_API_KEY}&regions=us&markets=h2h,spreads&oddsFormat=american`
 
   const [baseball, setBaseball] = useState([])
   const [prices, setPrices] = useState([])
