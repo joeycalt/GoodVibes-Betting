@@ -1,6 +1,6 @@
 # Project-3 | GoodVibes Betting
 
-Please visit us at: 
+Please visit us at: https://632cd5a488d9d90a8928a5e3--calm-chebakia-b898c4.netlify.app/
 
 GoodVibes Betting is a safe and easy browing website. GoodVibes Betting was developed to help those who enjoy betting on sports. Users who place bets on sports regularly, usually pick one sportsbook to place thier wagers and stick to it. Most users only continue to use one sportsbook because that's either the first one they found or were recommended to it. With betting, each sportsbook has different odss for each game, so one sportsbook may have better odds than another and you may be inclined to use that one instead. However, the users dont really want to search each individual sportsbook website to cpare the odds. Here at GoodVibes Betting gamblers will have the opportunity to bring up our website and pick a psort they would like to place bets on. There the user will then see each game available for bets, where the user could drop down the options. In the dropdown, users will see each sportsbook that is highly recommended and see their respective odds for that game. So once the user looks through the sportsbooks, they will then be able to compare the odds and make their choice in to which sportsbook they would like to wager their money on a game. GoodVibes Betting saves time by rendering all odds, from all sportsbooks, on all games on just one page. No longer having to visit 10 or more sites to compare.
 
