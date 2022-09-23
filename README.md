@@ -40,6 +40,14 @@ Show Page:
 Mobile View:
 ![Screen Shot 2022-09-22 at 4 24 11 PM](https://user-images.githubusercontent.com/102116778/191846224-5baf0e26-3af1-4d52-b1d2-dc6f54cbeab0.png)
 
+## What I enjoyed/what gave me a struggle
+
+What I enjoyed:
+Throughout this project there were many parts that I enjoyed doing. One of the main ones was implementing bootstrap into the app and seeing what it does. Using the accordion package was real fun. I love how it came out as well, it's easy to use and very user friendly. I can't wait to see what else bootstrap has in store for my many future projects. 
+
+What gave me a struggle:
+What gave me the most struggle was grabbing the data from the API and rendering it to the site. I was able to grab the first contents in the first array. However, when I had to access the nested array, inside of a nested array, it was tough. But thankfully I was able to figure it out and get the app to work properly. 
+
 ## Stretch Goals
 
 In the future we would love to expand on this app. First, we would like to integrate pages for the pages so the user doesnt have to scroll too much. Just show a certain amount per page to be user friendly. In addition, we would like to install a search bar. With the search bar the user will be able to search for any team and will be brought to a page only displays games and odds for that specific team. This would help the user from looking through the entire page to find that one team.
