@@ -1,6 +1,6 @@
 # Project-3 | GoodVibes Betting
 
-Please visit us at: 
+Please visit us at: https://632cd5a488d9d90a8928a5e3--calm-chebakia-b898c4.netlify.app/
 
 GoodVibes Betting is a safe and easy browing website. GoodVibes Betting was developed to help those who enjoy betting on sports. Users who place bets on sports regularly, usually pick one sportsbook to place thier wagers and stick to it. Most users only continue to use one sportsbook because that's either the first one they found or were recommended to it. With betting, each sportsbook has different odss for each game, so one sportsbook may have better odds than another and you may be inclined to use that one instead. However, the users dont really want to search each individual sportsbook website to cpare the odds. Here at GoodVibes Betting gamblers will have the opportunity to bring up our website and pick a psort they would like to place bets on. There the user will then see each game available for bets, where the user could drop down the options. In the dropdown, users will see each sportsbook that is highly recommended and see their respective odds for that game. So once the user looks through the sportsbooks, they will then be able to compare the odds and make their choice in to which sportsbook they would like to wager their money on a game. GoodVibes Betting saves time by rendering all odds, from all sportsbooks, on all games on just one page. No longer having to visit 10 or more sites to compare.
 
@@ -15,7 +15,7 @@ Throughout this app, there were many different languages, libraries and framewor
   - Bootstrap
   - DOM Manipulation
   
-## Gettin Started
+## Getting Started
  
 GoodVibes Betting is an app where users could get all betting odds in one place instead of searching through multiple sites just to compare and pick the best ones. This app is also a public repository where a user will be welcomed to forking and cloning down the repository to fix any errors or even add on to it. To get started, the user will need to first hit fork on the top right corner of the screen and hit create fork. Then the user will be able to copy their clone and download it on to their own machine. 
 
@@ -39,6 +39,14 @@ Show Page:
 
 Mobile View:
 ![Screen Shot 2022-09-22 at 4 24 11 PM](https://user-images.githubusercontent.com/102116778/191846224-5baf0e26-3af1-4d52-b1d2-dc6f54cbeab0.png)
+
+## What I enjoyed/what gave me a struggle
+
+What I enjoyed:
+Throughout this project there were many parts that I enjoyed doing. One of the main ones was implementing bootstrap into the app and seeing what it does. Using the accordion package was real fun. I love how it came out as well, it's easy to use and very user friendly. I can't wait to see what else bootstrap has in store for my many future projects. 
+
+What gave me a struggle:
+What gave me the most struggle was grabbing the data from the API and rendering it to the site. I was able to grab the first contents in the first array. However, when I had to access the nested array, inside of a nested array, it was tough. But thankfully I was able to figure it out and get the app to work properly. 
 
 ## Stretch Goals
 
