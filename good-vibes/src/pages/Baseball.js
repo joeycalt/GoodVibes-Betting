@@ -3,11 +3,12 @@ import Accordion from 'react-bootstrap/Accordion';
 
 const Baseball = () => {
   const url = `https://api.the-odds-api.com/v4/sports/baseball_mlb/odds/?apiKey=${process.env.REACT_APP_API_KEY}&regions=us&markets=h2h,spreads&oddsFormat=american`
-
+  const urlTwo = `https://api.the-odds-api.com/v4/sports/baseball_mlb_world_series_winner/odds/?apiKey=${process.env.REACT_APP_API_KEY}&regions=us`
   const [baseball, setBaseball] = useState([])
   const [prices, setPrices] = useState([])
+  const [champs, setChamps] = useState([])
   useEffect(() => {
-
+    
     function getPrice(arr) {
       return arr.map(el => {
         const output = {}
@@ -15,7 +16,8 @@ const Baseball = () => {
         const price = outcomes?.map(obj => obj.map(p => p.price || 'N/A'))
         output[el.title] = price.flatMap(el => el)
         return output
-      })
+      }
+      )
     }
     const getBaseball = async () => {
       try {
@@ -26,10 +28,23 @@ const Baseball = () => {
         setBaseball(data)
       } catch (err) {
         console.log(err)
+      }  
+    }
+
+    const getChamps = async () => {
+      try {
+        const response = await fetch(urlTwo)
+        const dataTwo = await response.json()
+        setChamps(dataTwo)
+        console.log(dataTwo)
+      } catch (err) {
+        console.log(err)
       }
     }
+
     getBaseball()
-  }, [url]);
+    getChamps()
+  }, [url,urlTwo]);
   return (
     <>
       <h1 className='league'>MLB</h1>
@@ -49,13 +64,13 @@ const Baseball = () => {
                   <div className='teams'>
                     <div className='books' key={index}><div>{prices[index]?.map(price => {
                       return (
-                      <>
+                        <>
                           <p>{price.name}</p>
                           {Object.entries(price)?.map(p => {
                             return (
                               <p>{p[0]}: <span className='lines'>[{p[1]}]</span></p>
-                            )
-                          })}
+                              )
+                            })}
                         </>
                       )
                     }
@@ -65,8 +80,9 @@ const Baseball = () => {
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>
-          )
-        })}
+            
+            )
+          })}
       </section>
     </>
   )
