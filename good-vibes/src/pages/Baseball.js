@@ -6,7 +6,6 @@ const Baseball = () => {
   const urlTwo = `https://api.the-odds-api.com/v4/sports/baseball_mlb_world_series_winner/odds/?apiKey=${process.env.REACT_APP_API_KEY}&regions=us`
   const [baseball, setBaseball] = useState([])
   const [prices, setPrices] = useState([])
-  const [champs, setChamps] = useState([])
   useEffect(() => {
     
     function getPrice(arr) {
@@ -31,19 +30,7 @@ const Baseball = () => {
       }  
     }
 
-    const getChamps = async () => {
-      try {
-        const response = await fetch(urlTwo)
-        const dataTwo = await response.json()
-        setChamps(dataTwo)
-        console.log(dataTwo)
-      } catch (err) {
-        console.log(err)
-      }
-    }
-
     getBaseball()
-    getChamps()
   }, [url,urlTwo]);
   return (
     <>

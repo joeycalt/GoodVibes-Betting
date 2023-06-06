@@ -1,8 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom";
-import { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 
 const Header = () => {
 
