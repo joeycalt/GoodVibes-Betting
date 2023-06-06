@@ -4,7 +4,7 @@ const First = () => {
    return (
     <div>
         <h1 className='first'>Are you at least 21 years of age?</h1>
-        <div>
+        <div className='first-b'>
         <Link to='/home'>
             <button className='button'>Yes</button>
         </Link>

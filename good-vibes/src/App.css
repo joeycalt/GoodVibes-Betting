@@ -162,8 +162,12 @@ div.accordion-body {
 }
 
 .first {
-  margin-top: 180px;
+  padding-top: 180px;
   color: #ffff00;
+}
+
+.first-b {
+  padding-bottom: 250px;
 }
 
 .button {
