@@ -90,6 +90,16 @@
   padding-top: 100px;
 }
 
+.navbar-links {
+  color: #ffff00;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar-links:hover {
+  color: white;
+}
+
 /* .image-base {
   margin: 20px;
   margin-left: auto;
