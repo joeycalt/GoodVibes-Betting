@@ -68,7 +68,8 @@ const Baseball = () => {
                           <p>{price.name}</p>
                           {Object.entries(price)?.map(p => {
                             return (
-                              <p>{p[0]}: <span className='lines'>[{p[1]}]</span></p>
+                              <p>{p[0]}: <p className='lines'>
+                                <p>[<p>{p[1]}</p>]</p></p></p>
                               )
                             })}
                         </>

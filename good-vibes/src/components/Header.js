@@ -1,31 +1,29 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import { useState } from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 
 const Header = () => {
+
   return (
+
     <>
-    <div className='main-nav'>
-    <h1 className='header'>
-        <img className='top-img' src='https://i.im.ge/2022/09/19/1dvbB1.Screen-Shot-2022-09-18-at-8-36-33-PM.png' alt=''></img>
-        GoodVibes Betting
-    <img className='top-img' src='https://i.im.ge/2022/09/19/1dvbB1.Screen-Shot-2022-09-18-at-8-36-33-PM.png' alt=''></img>
-    </h1>
-    <nav className="nav navbar">
-   
-      <Link to="/home">
-      <img className='logo'  src='https://i.im.ge/2022/09/19/1dvbB1.Screen-Shot-2022-09-18-at-8-36-33-PM.png' alt=''></img>
-      </Link>
-      <Link className='nav-league' to='/baseball'>Baseball
-      </Link>
-      <Link className='nav-league' to='/football'>Football
-      </Link>
-      <Link className='nav-league' to='/hockey'>Hockey
-      </Link>
-      <Link className='nav-league' to='/about'>About
-      </Link>
-    </nav>
-    </div>
-</>
+<Navbar collapseOnSelect className='header' fixed='top' expand='sm' variant='dark'>
+  <Container>
+    <Navbar.Toggle aria-controls='responsive-navbar-nav' data-bs-toggle="collapse"/>
+    <Navbar.Collapse id='responsive-navbar-nav'>
+      <Nav>
+        <Nav.Link className='navbar-links' href='/home'>Home</Nav.Link>
+        <Nav.Link href='/baseball'>Baseball</Nav.Link>
+        <Nav.Link href='/hockey'>Hockey</Nav.Link>
+        <Nav.Link href='/football'>Football</Nav.Link>
+        <Nav.Link href='/about'>About</Nav.Link>
+      </Nav>
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
+    </>
   )
 }
 
